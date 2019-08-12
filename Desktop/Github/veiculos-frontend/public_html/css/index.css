@@ -1,0 +1,47 @@
+/* 
+    Created on : 17/07/2019, 03:26:11
+    Author     : KALUNGA
+*/
+
+.container-random{
+    height: 900px;
+    background: black;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.hero-bg-principal{
+    position: relative;
+    display: block;
+    background-color: rgba(200,0,0,0.3);
+}
+
+.hero-bg-principal::after{
+    background-image: url(../img/carro-branco.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    /*opacity: 0.8;*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+.hero-bg-principal::before{
+    content: '';
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(250, 0, 0, 0));
+}
+
+.hero-form-index{
+    padding: 8rem 10rem;
+}
